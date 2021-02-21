@@ -9,6 +9,7 @@
   --button-color: rgba(245, 244, 250, 1);
   --card-border: rgba(238, 238, 238, 1);
   --header-border: #ececec;
+  --bcolor-icon: rgba(255, 255, 255, 0.1);
   --card-set-gap: 30px;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -105,10 +106,33 @@ img {
   margin-left: 50px;
 }
 
+/* ---------ИКОНКИ */
+
+.icon-cont {
+  display: inline;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contacts-nav .item .link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-nav .item:hover {
+  fill: currentColor;
+}
+
 /* section hero */
 .hero {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
   text-align: center;
   background-color: var(--hero-color);
+  background-image: url('../images/hero.jpg');
 }
 
 .hero-title {
@@ -158,6 +182,11 @@ img {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.about-card svg {
+  width: 65px;
+  height: 70px;
 }
 
 .about-card {
@@ -305,6 +334,11 @@ img {
   background-color: var(--hero-color);
 }
 
+.foot {
+  display: flex;
+  align-items: baseline;
+}
+
 .logof {
   margin: 0;
   padding-top: 60px;
@@ -319,6 +353,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  /* outline: 2px solid tomato; */
 }
 
 .cont-text {
@@ -335,6 +370,60 @@ img {
 .contacts-navf {
   padding: 0;
   padding-bottom: 60px;
+}
+
+/* иконки соц сетей футер */
+.social-text {
+  font-style: normal;
+  color: var(--h-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-left: 156px;
+}
+
+.social-icons li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  border-radius: 50%;
+  background-color: var(--bcolor-icon);
+}
+
+.social-icons a,
+.social-icons svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+}
+
+.social-icons a:hover {
+  background-color: var(--title-text-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icons svg {
+  width: 20px;
+  fill: white;
+}
+
+.social-icons li:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* portfolio */
