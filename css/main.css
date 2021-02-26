@@ -116,8 +116,8 @@ img {
 
 .icon-cont {
   display: inline;
-  width: 16px;
-  height: 12px;
+  /* width: 16px; */
+  /* height: 12px; */
   margin-right: 10px;
 }
 
@@ -407,9 +407,19 @@ img {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.our-clients-card li svg {
+/* .our-clients-card li svg {
   width: 88px;
   height: 45px;
+} */
+
+.our-clients-card li:hover svg,
+.our-clients-card li:focus svg {
+  fill: var(--title-text-color);
+}
+
+.our-clients-card li:hover,
+.our-clients-card li:focus {
+  border: 1px solid var(--title-text-color);
 }
 
 .our-clients-card li {
@@ -588,10 +598,13 @@ img {
   margin-top: var(--card-set-gap);
 }
 
+a:link {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
 .our-works .item:hover,
 .our-works .item:focus {
   border: 1px solid var(--card-border);
-  /* box-sizing: border-box; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -599,7 +612,8 @@ img {
 .card-content-works {
   padding: 20px 24px;
   border: 1px solid var(--card-border);
-  box-sizing: border-box;
+  color: var(--primary-text-color);
+  line-height: 2;
 }
 
 .our-works .card-thumb img {
@@ -610,6 +624,7 @@ img {
   margin: 0;
   margin-bottom: 4px;
   font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
@@ -618,7 +633,9 @@ img {
   margin: 0;
   font-family: inherit;
   font-size: 16px;
+  text-decoration: none;
   color: var(--dop-text-color);
+  line-height: 1.87;
 }
 
 .container {
