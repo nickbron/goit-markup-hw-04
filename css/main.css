@@ -407,10 +407,9 @@ img {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-/* .our-clients-card li svg {
-  width: 88px;
-  height: 45px;
-} */
+.our-clients-card li svg {
+  fill: var(--icon-color);
+}
 
 .our-clients-card li:hover svg,
 .our-clients-card li:focus svg {
